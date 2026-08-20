@@ -1,13 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=/Library/Frameworks/Python.framework/Versions/3.8/bin:$PATH
-export PATH=/Library/Frameworks/Python.framework/Versions/3.6/bin:$PATH
-export PATH=/Users/adig/.npm-global/bin:$PATH
-# Path to your oh-my-zsh installation.
 
-fpath=(/usr/local/share/zsh-completions $fpath)
-export ZSH="/Users/adig/.oh-my-zsh"
+
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -77,7 +74,7 @@ ZSH_DISABLE_COMPFIX=true
 plugins=(
   colorize
   colored-man-pages
-  # zsh-syntax-highlighting
+  zsh-syntax-highlighting
   sudo
   git
   z
@@ -135,7 +132,6 @@ alias lg='lazygit'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-plugins=(plugins... zsh-syntax-highlighting)
 
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
@@ -145,22 +141,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Created by `pipx` on 2025-07-18 21:25:35
-export PATH="$PATH:/Users/adig/.local/bin"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+export PATH="$PATH:$HOME/.local/bin"
 
 export PATH="/opt/homebrew/bin:$PATH"
 

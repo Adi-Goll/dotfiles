@@ -74,7 +74,6 @@ ZSH_DISABLE_COMPFIX=true
 plugins=(
   colorize
   colored-man-pages
-  zsh-syntax-highlighting
   sudo
   git
   z
@@ -83,7 +82,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 
-alias ls=exa
+alias ls=eza
 alias cl=clear
 alias rm='rm -i'
 alias chmox='chmod +x'

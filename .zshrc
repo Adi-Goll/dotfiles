@@ -106,6 +106,7 @@ alias config='v ~/.zshrc'
 alias co='pbcopy'
 alias lg='lazygit'
 alias uzi='open -a Spotify; sleep 2; osascript -e '\''tell application "Spotify" to play track "spotify:playlist:2y5dgfU9MnoZCYWZuYzftU"'\'''
+alias dot='cd ~/.dotfiles'
 
 # User configuration
 

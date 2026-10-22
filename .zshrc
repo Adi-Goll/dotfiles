@@ -33,3 +33,7 @@ alias uzi='open -a Spotify; sleep 2; osascript -e '\''tell application "Spotify"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 [ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
+
+if [[ -f "$HOME/miniforge3/etc/profile.d/conda.sh" ]]; then
+    source "$HOME/miniforge3/etc/profile.d/conda.sh"
+fi
